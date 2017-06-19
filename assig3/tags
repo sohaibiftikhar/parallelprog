@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BYTESIZE	histogram.h	/^#define BYTESIZE /;"	d
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -std=c++14 -fstrict-overflow -Werror -Wall -Wshadow -Wstrict-overflow=5 -pedantic$/;"	m
+CFLAGS_1	Makefile	/^CFLAGS_1 = -std=c++14 -fstrict-overflow -Werror -Wall -Wshadow -Wstrict-overflow=5 -pedantic$/;"	m
+CHUNKSIZE	histogram.h	/^#define CHUNKSIZE /;"	d
+DEPS	Makefile	/^DEPS := $(OBJ_SEQ:.o=.d)$/;"	m
+HISTOGRAM_H_	histogram.h	/^#define HISTOGRAM_H_$/;"	d
+HISTOGRAM_REF_H_	histogram_ref.h	/^#define HISTOGRAM_REF_H_$/;"	d
+LDFLAGS	Makefile	/^LDFLAGS = -pthread -I$(CURDIR)$/;"	m
+LDFLAGS_1	Makefile	/^LDFLAGS_1 = -I$(CURDIR)$/;"	m
+MAX	histogram.cpp	/^#define MAX(/;"	d	file:
+MAX_HASH_VALUE	names.cpp	/^#define MAX_HASH_VALUE /;"	d	file:
+MAX_WORD_LENGTH	names.cpp	/^#define MAX_WORD_LENGTH /;"	d	file:
+MIN_HASH_VALUE	names.cpp	/^#define MIN_HASH_VALUE /;"	d	file:
+MIN_WORD_LENGTH	names.cpp	/^#define MIN_WORD_LENGTH /;"	d	file:
+NALPHABET	histogram.h	/^#define NALPHABET /;"	d
+NAME	Makefile	/^NAME = histogram$/;"	m
+NAMES_H_	names.h	/^#define NAMES_H_$/;"	d
+NLINES	histogram.cpp	/^#define NLINES /;"	d	file:
+NNAMES	histogram.h	/^#define NNAMES /;"	d
+OBJ_PAR	Makefile	/^OBJ_PAR = $(SDIR)\/main.o $(SDIR)\/names.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_par.o$/;"	m
+OBJ_SEQ	Makefile	/^OBJ_SEQ = $(SDIR)\/main.o $(SDIR)\/names.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_seq.o$/;"	m
+OBJ_UNIT	Makefile	/^OBJ_UNIT = $(SDIR)\/unit_test.o $(SDIR)\/$(NAME).o $(SDIR)\/names.o $(SDIR)\/$(NAME)_par.o $(SDIR)\/$(NAME)_ref.o$/;"	m
+SDIR	Makefile	/^SDIR = student$/;"	m
+SRC	Makefile	/^SRC = $(wildcard *.cpp) $(wildcard *\/*.cpp)$/;"	m
+TERMINATOR	histogram.h	/^#define TERMINATOR /;"	d
+TOTAL_KEYWORDS	names.cpp	/^#define TOTAL_KEYWORDS /;"	d	file:
+VPATH	Makefile	/^VPATH = $(SDIR)$/;"	m
+WORDCOUNT	histogram.h	/^#define WORDCOUNT /;"	d
+getNameIndex	names.cpp	/^int getNameIndex(const char *str)$/;"	f
+get_histogram	histogram_seq.cpp	/^void get_histogram(const std::vector<word_t>& words, histogram_t& histogram, int num_threads)$/;"	f
+get_histogram	student/histogram_par.cpp	/^void get_histogram(const std::vector<word_t>& words, histogram_t& histogram, int num_threads)$/;"	f
+get_histogram_ref	histogram_ref.cpp	/^void get_histogram_ref(const std::vector<word_t>& words, histogram_t& histogram)$/;"	f
+gperf_nameIndex	names.cpp	/^gperf_nameIndex (const char *str, unsigned int len)$/;"	f
+hash	names.cpp	/^hash (const char *str, unsigned int len)$/;"	f	file:
+index	names.cpp	/^struct names { const char *name; int index; };$/;"	m	struct:names	file:
+main	main.cpp	/^int main(int argc, char** argv)$/;"	f
+main	unit_test.cpp	/^int main(int argc, char **argv)$/;"	f
+max_chars	histogram.cpp	/^int max_chars(histogram_t histogram)$/;"	f
+mode	Makefile	/^	mode = release$/;"	m
+name	names.cpp	/^struct names { const char *name; int index; };$/;"	m	struct:names	file:
+names	histogram.h	/^static char const *names[NNAMES] __attribute__((unused)) = {"Pierre","Andrew","Nicholas","Natasha","Napoleon","Dolokhov","Anatole","Anna","Sonya","Boris"};$/;"	v
+names	names.cpp	/^struct names { const char *name; int index; };$/;"	s	file:
+print_histogram	histogram.cpp	/^void print_histogram(histogram_t histogram)$/;"	f
+read_stream_into_string	histogram.h	/^auto read_stream_into_string(std::basic_istream<CharT, Traits>& in, Allocator alloc = {})$/;"	f

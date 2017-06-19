@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BYTESIZE	histogram.h	/^#define BYTESIZE /;"	d
+BYTESIZE	student/histogram.h	/^#define BYTESIZE /;"	d
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -std=c++11 -pthread -fstrict-overflow -Werror -Wall -Wshadow -Wstrict-overflow=5 -pedantic -fno-omit-frame-pointer$/;"	m
+CFLAGS_1	Makefile	/^CFLAGS_1 = -std=c++11 -fstrict-overflow -Werror -Wall -Wshadow -Wstrict-overflow=5 -pedantic -fno-omit-frame-pointer$/;"	m
+CHUNKSIZE	histogram.h	/^#define CHUNKSIZE /;"	d
+CHUNKSIZE	student/histogram.h	/^#define CHUNKSIZE /;"	d
+DEPS	Makefile	/^DEPS := $(OBJ_SEQ:.o=.d)$/;"	m
+HISTOGRAM_H_	histogram.h	/^#define HISTOGRAM_H_$/;"	d
+HISTOGRAM_H_	student/histogram.h	/^#define HISTOGRAM_H_$/;"	d
+HISTOGRAM_REF_H_	histogram_ref.h	/^#define HISTOGRAM_REF_H_$/;"	d
+LDFLAGS	Makefile	/^LDFLAGS = -pthread -I$(CURDIR)$/;"	m
+LDFLAGS_1	Makefile	/^LDFLAGS_1 = -I$(CURDIR)$/;"	m
+MAX	histogram.cpp	/^#define MAX(/;"	d	file:
+MAX_HASH_VALUE	names.cpp	/^#define MAX_HASH_VALUE /;"	d	file:
+MAX_WORD_LENGTH	names.cpp	/^#define MAX_WORD_LENGTH /;"	d	file:
+MIN_HASH_VALUE	names.cpp	/^#define MIN_HASH_VALUE /;"	d	file:
+MIN_WORD_LENGTH	names.cpp	/^#define MIN_WORD_LENGTH /;"	d	file:
+NALPHABET	histogram.h	/^#define NALPHABET /;"	d
+NALPHABET	student/histogram.h	/^#define NALPHABET /;"	d
+NAME	Makefile	/^NAME = histogram$/;"	m
+NAMES_H_	names.h	/^#define NAMES_H_$/;"	d
+NAMES_H_	student/names.h	/^#define NAMES_H_$/;"	d
+NLINES	histogram.cpp	/^#define NLINES /;"	d	file:
+NNAMES	histogram.h	/^#define NNAMES /;"	d
+NNAMES	student/histogram.h	/^#define NNAMES /;"	d
+NUM_HASHES	student/histogram_par.cpp	/^#define NUM_HASHES /;"	d	file:
+OBJ_PAR	Makefile	/^OBJ_PAR = $(SDIR)\/main.o $(SDIR)\/names.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_par.o$/;"	m
+OBJ_SEQ	Makefile	/^OBJ_SEQ = $(SDIR)\/main.o $(SDIR)\/names.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_seq.o$/;"	m
+OBJ_UNIT	Makefile	/^OBJ_UNIT = $(SDIR)\/unit_test.o $(SDIR)\/$(NAME).o $(SDIR)\/names.o $(SDIR)\/$(NAME)_par.o $(SDIR)\/$(NAME)_ref.o$/;"	m
+SDIR	Makefile	/^SDIR = student$/;"	m
+SRC	Makefile	/^SRC = $(wildcard *.c) $(wildcard *\/*.c)$/;"	m
+TERMINATOR	histogram.h	/^#define TERMINATOR /;"	d
+TERMINATOR	student/histogram.h	/^#define TERMINATOR /;"	d
+TOTAL_KEYWORDS	names.cpp	/^#define TOTAL_KEYWORDS /;"	d	file:
+VPATH	Makefile	/^VPATH = $(SDIR)$/;"	m
+alloc_node	student/histogram_par.cpp	/^  node* alloc_node()$/;"	f	class:spsc_queue	file:
+buffer	student/histogram_par.cpp	/^    char* buffer; \/\/ 8 bytes$/;"	m	struct:pthread_args	file:
+cache_line_pad_	student/histogram_par.cpp	/^  char cache_line_pad_ [cache_line_size];$/;"	m	class:spsc_queue	file:
+cache_line_size	student/histogram_par.cpp	/^size_t const cache_line_size = 64;$/;"	v
+dequeue	student/histogram_par.cpp	/^  bool dequeue(T& v)$/;"	f	class:spsc_queue
+encode	student/histogram_par.cpp	/^long encode(int a, int b) {$/;"	f
+enqueue	student/histogram_par.cpp	/^  void enqueue(T v)$/;"	f	class:spsc_queue
+first_	student/histogram_par.cpp	/^  node* first_; \/\/ last unused node (tail of node cache)$/;"	m	class:spsc_queue	file:
+getNameIndex	names.cpp	/^int getNameIndex(char *str)$/;"	f
+get_histogram	histogram_seq.cpp	/^void get_histogram(char *buffer, int* histogram, int num_threads)$/;"	f
+get_histogram	student/histogram_par.cpp	/^void get_histogram(char *buffer, int* histogram, int num_threads) {$/;"	f
+get_histogram_ref	histogram_ref.cpp	/^void get_histogram_ref(char *buffer, int* histogram)$/;"	f
+gperf_nameIndex	names.cpp	/^gperf_nameIndex (register const char *str, register unsigned int len)$/;"	f
+hash	names.cpp	/^hash (register const char *str, register unsigned int len)$/;"	f	file:
+head_	student/histogram_par.cpp	/^  node* head_; \/\/ head of the queue$/;"	m	class:spsc_queue	file:
+histogram	student/histogram_par.cpp	/^    int histogram[NNAMES]; \/\/ 8 bytes$/;"	m	struct:pthread_args	file:
+histogram_t	histogram.h	/^typedef int histogram_t[NNAMES];$/;"	t
+histogram_t	student/histogram.h	/^typedef int histogram_t[NNAMES];$/;"	t
+index	names.cpp	/^struct names { const char *name; int index; };$/;"	m	struct:names	file:
+load_consume	student/histogram_par.cpp	/^T load_consume(T const* addr)$/;"	f
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	unit_test.cpp	/^int main(int argc, char **argv)$/;"	f
+max_chars	histogram.cpp	/^int max_chars(histogram_t histogram)$/;"	f
+mode	Makefile	/^	mode = release$/;"	m
+name	names.cpp	/^struct names { const char *name; int index; };$/;"	m	struct:names	file:
+names	histogram.h	/^static char const *names[NNAMES] __attribute__((unused)) = {"Pierre","Andrew","Nicholas","Natasha","Napoleon","Dolokhov","Anatole","Anna","Sonya","Boris"};$/;"	v
+names	names.cpp	/^struct names { const char *name; int index; };$/;"	s	file:
+names	student/histogram.h	/^static char const *names[NNAMES] __attribute__((unused)) = {"Pierre","Andrew","Nicholas","Natasha","Napoleon","Dolokhov","Anatole","Anna","Sonya","Boris"};$/;"	v
+next_	student/histogram_par.cpp	/^      node* next_;$/;"	m	struct:spsc_queue::node	file:
+node	student/histogram_par.cpp	/^  struct node$/;"	s	class:spsc_queue	file:
+print_histogram	histogram.cpp	/^void print_histogram(histogram_t histogram)$/;"	f
+process_blocks	student/histogram_par.cpp	/^void* process_blocks(void* args_ptr) {$/;"	f
+pthread_args	student/histogram_par.cpp	/^struct pthread_args {$/;"	s	file:
+q	student/histogram_par.cpp	/^    spsc_queue<long> q;$/;"	m	struct:pthread_args	file:
+spsc_queue	student/histogram_par.cpp	/^  spsc_queue()$/;"	f	class:spsc_queue
+spsc_queue	student/histogram_par.cpp	/^class spsc_queue$/;"	c	file:
+store_release	student/histogram_par.cpp	/^void store_release(T* addr, T v) {$/;"	f
+tail_	student/histogram_par.cpp	/^  node* tail_; \/\/ tail of the queue$/;"	m	class:spsc_queue	file:
+tail_copy_	student/histogram_par.cpp	/^  node* tail_copy_; \/\/ helper (points somewhere between first_ and tail_)$/;"	m	class:spsc_queue	file:
+value_	student/histogram_par.cpp	/^      T value_;$/;"	m	struct:spsc_queue::node	file:
+~spsc_queue	student/histogram_par.cpp	/^  ~spsc_queue()$/;"	f	class:spsc_queue

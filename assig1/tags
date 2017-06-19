@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLOCKSIZE	histogram.h	/^#define BLOCKSIZE /;"	d
+BYTESIZE	histogram.h	/^#define BYTESIZE /;"	d
+CC	Makefile	/^CC = clang++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -std=c++11 -pthread -fstrict-overflow -Wall -Werror -Wshadow -Wstrict-overflow=5 -pedantic$/;"	m
+CFLAGS_1	Makefile	/^CFLAGS_1 = -std=c++11 -fstrict-overflow -Wall -Werror -Wshadow -Wstrict-overflow=5 -pedantic$/;"	m
+DEPS	Makefile	/^DEPS := $(OBJ_SEQ:.o=.d)$/;"	m
+HISTOGRAM_H_	histogram.h	/^#define HISTOGRAM_H_$/;"	d
+HISTOGRAM_REF_H_	histogram_ref.h	/^#define HISTOGRAM_REF_H_$/;"	d
+LDFLAGS	Makefile	/^LDFLAGS = -I$(CURDIR)$/;"	m
+MAX	histogram.cpp	/^#define MAX(/;"	d	file:
+NAME	Makefile	/^NAME = histogram$/;"	m
+NLINES	histogram.cpp	/^#define NLINES /;"	d	file:
+NNAMES	histogram.h	/^#define NNAMES /;"	d
+OBJ_PAR	Makefile	/^OBJ_PAR = $(SDIR)\/main.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_par.o$/;"	m
+OBJ_SEQ	Makefile	/^OBJ_SEQ = $(SDIR)\/main.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_seq.o$/;"	m
+OBJ_UNIT	Makefile	/^OBJ_UNIT = $(SDIR)\/unit_test.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_par.o $(SDIR)\/$(NAME)_ref.o$/;"	m
+SDIR	Makefile	/^SDIR = student$/;"	m
+SRC	Makefile	/^SRC = $(wildcard *.c) $(wildcard *\/*.c)$/;"	m
+VPATH	Makefile	/^VPATH = $(SDIR)$/;"	m
+block_t	histogram.h	/^typedef char block_t[BLOCKSIZE];$/;"	t
+get_histogram	histogram_seq.cpp	/^void get_histogram(int nBlocks,$/;"	f
+get_histogram	student/histogram_par.cpp	/^void get_histogram(int nBlocks, block_t *blocks, histogram_t histogram, int num_threads)$/;"	f
+get_histogram_ref	histogram_ref.cpp	/^void get_histogram_ref(int nBlocks,$/;"	f
+histogram_t	histogram.h	/^typedef int histogram_t[NNAMES];$/;"	t
+main	main.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+main	unit_test.cpp	/^int main(int argc, char **argv)$/;"	f
+max_chars	histogram.cpp	/^int max_chars(histogram_t histogram) {$/;"	f
+mode	Makefile	/^	mode = release$/;"	m
+names	histogram.h	/^static char const *names[NNAMES] __attribute__((unused)) = {"Pierre","Andrew","Nicholas","Natasha","Napoleon","Dolokhov","Anatole","Anna","Sonya","Boris"};$/;"	v
+print_histogram	histogram.cpp	/^void print_histogram(histogram_t histogram) {$/;"	f
+process_blocks	student/histogram_par.cpp	/^int* process_blocks(int start_block, int end_block, block_t* blocks) {$/;"	f
