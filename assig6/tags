@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC = gcc-7$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -std=gnu99 -lpthread -fopenmp -fstrict-overflow -Werror -Wall -Wshadow -pedantic -I$(CURDIR)$/;"	m
+DEPS	Makefile	/^DEPS := $(OBJ_SEQ:.o=.d)$/;"	m
+DS_H	ds.h	/^#define DS_H$/;"	d
+FT_H	companytree.h	/^#define FT_H$/;"	d
+FT_REF_H	companytree_ref.h	/^#define FT_REF_H$/;"	d
+LDFLAGS	Makefile	/^LDFLAGS = -lm -lpthread -fopenmp -ldl$/;"	m
+MAXLEVEL	ds.h	/^#define MAXLEVEL /;"	d
+NAME	Makefile	/^NAME = companytree$/;"	m
+NEST_LIMIT	student/companytree_par.c	/^#define NEST_LIMIT /;"	d	file:
+NUMNODES	ds.h	/^#define NUMNODES /;"	d
+OBJ_PAR	Makefile	/^OBJ_PAR = $(SDIR)\/main.o $(SDIR)\/ds.o $(SDIR)\/vis.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_par.o$/;"	m
+OBJ_SEQ	Makefile	/^OBJ_SEQ = $(SDIR)\/main.o $(SDIR)\/ds.o $(SDIR)\/vis.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_seq.o$/;"	m
+OBJ_UNIT	Makefile	/^OBJ_UNIT = $(SDIR)\/unit_test.o $(SDIR)\/ds.o $(SDIR)\/vis.o $(SDIR)\/$(NAME).o $(SDIR)\/$(NAME)_par.o $(SDIR)\/$(NAME)_ref.o$/;"	m
+SDIR	Makefile	/^SDIR = student$/;"	m
+SRC	Makefile	/^SRC = $(wildcard *.c) $(wildcard *\/*.c)$/;"	m
+VIS_H	vis.h	/^#define VIS_H$/;"	d
+VPATH	Makefile	/^VPATH = $(SDIR)$/;"	m
+bin_tree	ds.h	/^struct bin_tree {$/;"	s
+company	ds.c	/^char *company[26] = {$/;"	v
+compute_workHours	companytree.c	/^int compute_workHours(int data)$/;"	f
+data	ds.h	/^	int data;$/;"	m	struct:bin_tree
+fill	companytree.c	/^void fill(tree *node, int level)$/;"	f
+g_node_id	ds.c	/^int g_node_id = 0;$/;"	v
+get_monotonic_time	main.c	/^void get_monotonic_time(struct timespec *ts){$/;"	f
+id	ds.h	/^	int id;$/;"	m	struct:bin_tree
+initialize	companytree.c	/^void initialize(tree *node)$/;"	f
+is_prime	companytree.c	/^int is_prime(int n)$/;"	f
+left	ds.h	/^	struct bin_tree * right, * left;$/;"	m	struct:bin_tree	typeref:struct:bin_tree::
+main	main.c	/^int main(int argc, char** argv){$/;"	f
+main	unit_test.c	/^int main()$/;"	f
+mode	Makefile	/^	mode = release$/;"	m
+name	ds.h	/^  	char name[200];$/;"	m	struct:bin_tree
+position	ds.c	/^char *position[39] = {$/;"	v
+right	ds.h	/^	struct bin_tree * right, * left;$/;"	m	struct:bin_tree	typeref:struct:bin_tree::bin_tree
+tearDown	companytree.c	/^void tearDown(tree* node)$/;"	f
+top_work_hours	ds.h	/^int top_work_hours[NUMNODES];$/;"	v
+traverse	companytree_seq.c	/^void traverse(tree *node, int numThreads){$/;"	f
+traverse	student/companytree_par.c	/^void traverse(tree *node, int numThreads){$/;"	f
+traverse_par	student/companytree_par.c	/^void traverse_par(tree *node,  int itrNo) {$/;"	f
+traverse_ref	companytree_ref.c	/^void traverse_ref(tree *node){$/;"	f
+tree	ds.h	/^typedef struct bin_tree tree;$/;"	t	typeref:struct:bin_tree
+visualize	vis.c	/^void visualize(){$/;"	f
+work_hours	ds.h	/^	int work_hours;$/;"	m	struct:bin_tree
